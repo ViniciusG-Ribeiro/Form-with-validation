@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio HTML/CSS/JS intermediário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div class="container-mensagem">
+            <h1>ficou com dúvida?<br>
+                nos mande uma mensagem!
+            </h1>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </div>
+        <div class="container-input">
+            <div class="inputs">
+                <div class="div-inputs">
+                    <input class="entrada" type="text" placeholder="Nome completo *">
+                    <p class="error-text erro-1">campo obrigatório</p>
+                </div>
+
+                <div class="div-inputs">
+                    <input class="entrada" type="email" placeholder="Email *">
+                    <p class="error-text erro-2">campo obrigatório</p>
+                </div>
+                
+                <div class="div-inputs">
+                    <input class="entrada" type="text" placeholder="Telefone *">
+                    <p class="error-text erro-3">campo obrigatório</p>
+                </div>
+
+                <div class="div-inputs">
+                    <textarea class="entrada" name="mensagem" cols="30" rows="5" placeholder="Mensagem *"></textarea>
+                    <p class="error-text erro-4">campo obrigatório</p>
+                </div>
+
+            </div>
+            
+            <h3>*campos obrigatórios</h3>
+            <button onclick="toSend()" id="button-to-send" class="button-inputs">Enviar</button>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
+

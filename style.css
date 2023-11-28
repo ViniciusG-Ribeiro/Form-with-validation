@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.container{
+    width: 800px;
+    height: 402px;
+    background: url(img/bg-repeat.jpg) center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-mensagem{
+    margin: 16px 45px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.container-mensagem h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.container-mensagem p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    width: 300px;
+}
+
+.container-input{
+    background-color: white;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    margin-right: 45px;
+    width: 340px;
+    height: 378px;
+    padding-left: 15px;
+}
+
+.inputs{
+    padding: 20px 6px;
+    padding-bottom: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputs input{
+    height: 35.11px;
+    margin-bottom:15px;
+}
+
+.entrada{
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 298px;
+    padding-left:10px ;
+}
+
+.entrada::placeholder{
+    color:#A8A8A8;
+}
+
+.error-text{
+    color: #F52E2E;
+    font-size: 8px;
+    font-weight: 400;
+    position: absolute;
+    display: none;
+}
+
+.erro-1{
+    top: 55px;
+}
+
+.erro-2{
+    top: 105px;
+}
+
+.erro-3{
+    top: 156px;
+}
+
+.erro-4{
+    top: 263px;
+}
+
+.error-text-ativo{
+    display: block;
+}
+
+.container-input h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button-inputs{
+    width: 298px;
+    height: 41px;
+    background-color: #3CCC87;;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    margin:15px 6px;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-inputs{
+    cursor: pointer;
+}
+
+.input-null{ 
+    border-color: #F52E2E;
+}
+
+.input-notnull{
+    border-color:#00C22B;
+}
