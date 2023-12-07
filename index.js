@@ -13,6 +13,7 @@ function toSend(){
         if(divInputs[cont].children.item(0).value == ""){
             divInputs[cont].children.item(0).classList.add("input-null");
             divInputs[cont].children.item(1).classList.add("error-text-ativo");
+            divInputs[cont].children.item(0).classList.remove("input-notnull");
             
         }else{
             divInputs[cont].children.item(0).classList.add("input-notnull");
